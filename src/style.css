@@ -1,0 +1,183 @@
+/* General calendar container styles */
+.fc {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: "Arial", sans-serif;
+    background-color: white;
+  }
+  .fc .fc-button-primary {
+    background-color: rgba(255, 0, 0, 0);
+    border-color:none;
+    color:  black;
+}
+.fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+    background-color: rgba(255, 0, 0, 0);
+    border-color:none;
+    color:  black;
+    border :none;
+}
+  /* Header toolbar styles */
+  .fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  
+  .fc-toolbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .fc-button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .fc-button:hover {
+    background-color: #003d82;
+  }
+  
+  /* Navigation buttons */
+  .fc-prev-button, .fc-next-button {
+    background-color: white;
+    color: #0056b3;
+    border: 1px solid #0056b3;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .fc-prev-button:hover, .fc-next-button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* Weekdays header styling */
+  .fc-col-header-cell {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  /* Day grid background */
+  .fc-daygrid-day {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 0;
+  }
+  
+  /* Time grid styles (week/day view) */
+  .fc-timegrid-slot {
+    border-top: 1px solid #ddd;
+  }
+  
+  .fc-timegrid-axis-cushion {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 5px;
+  }
+  
+  /* Event box styles */
+  .fc-event {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-left: 8px solid #0474ec;
+     font-size: 0.85rem;
+    line-height: 1.2;
+     height: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 200;
+  }
+  
+  .fc-event:hover {
+    background-color: #6bb0ff;
+  }
+  
+  /* Active day highlight */
+  .fc-day-today {
+    background-color: #f0f8ff;
+  }
+  
+  /* Custom tooltip style (optional for events with descriptions) */
+  .fc-event::after {
+    content: attr(data-tooltip); /* Custom tooltip from data attribute */
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    display: none;
+  }
+  .fc .fc-timegrid-axis-cushion, .fc .fc-timegrid-slot-label-cushion{
+    color: #0266d8;
+  }
+  .fc-event:hover::after {
+    display: block;
+    z-index: 100;
+  }
+  :root {
+    --fc-small-font-size: 0.9em;
+    --fc-page-bg-color: #ffffff; /* Keep a clean white background */
+    --fc-neutral-bg-color: rgba(242, 242, 242, 0.7); /* Subtle neutral background for unused slots */
+    --fc-neutral-text-color: #757575; /* Grey for less emphasis */
+    --fc-border-color: #e0e0e0; /* Softer border color */
+    --fc-button-text-color: #ffffff; /* White button text for clarity */
+    --fc-button-bg-color: #0056b3; /* Modern blue for primary buttons */
+    --fc-button-border-color: #0056b3; /* Match button background */
+    --fc-button-hover-bg-color: #003d82; /* Slightly darker blue on hover */
+    --fc-button-hover-border-color: #003d82; /* Match hover background */
+    --fc-button-active-bg-color: #002f61; /* Active state for buttons */
+    --fc-button-active-border-color: #002f6100; /* Match active background */
+    --fc-event-bg-color: #0056b3; /* Deep blue for events */
+    --fc-event-border-color: #0056b3; /* Match event background */
+    --fc-event-text-color: #ffffff; /* White text for events */
+    --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.15); /* Subtle overlay on selected event */
+    --fc-more-link-bg-color: #f0f0f0; /* Neutral for "more" links */
+    --fc-more-link-text-color: #b30000; /* Link text matches primary color */
+    --fc-event-resizer-thickness: 6px; /* Slightly smaller resizer for events */
+    --fc-event-resizer-dot-total-width: 6px; /* Match resizer thickness */
+    --fc-event-resizer-dot-border-width: 1px; /* Thin border for resizer */
+    --fc-non-business-color: rgba(240, 240, 240, 0.5); /* Lighter non-business hours color */
+    --fc-bg-event-color: #82b1ff; /* Subtle light blue for background events */
+    --fc-bg-event-opacity: 0.4; /* Increased transparency for background events */
+    --fc-highlight-color: rgba(188, 232, 241, 0.2); /* Light blue highlight */
+    --fc-today-bg-color: rgba(255, 245, 157, 0.4); /* Light yellow for today's background */
+    --fc-now-indicator-color: #d32f2f; /* Red for now indicator */
+}
+.fc-daygrid-event-dot {
+    border: calc(var(--fc-daygrid-event-dot-width) / 2) solid #ffc107;
+    border-radius: calc(var(--fc-daygrid-event-dot-width) / 2);
+    box-sizing: content-box;
+    height: 0px;
+    margin: 0px 4px;
+    width: 0px;
+}
+.fc-v-event .fc-event-main {
+    color: #000;
+    height: 100%;
+}
+.fc .fc-button {
+    background-color: transparent;
+      border: none;
+    }
+    .fc .fc-button:hover {
+        background-color: transparent;
+        color: #000;
+        }

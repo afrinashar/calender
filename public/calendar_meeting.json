@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "summary": "1st Round",
+    "desc": "Technical Interview - Round 1",
+    "start": "2024-08-29T18:00:00+05:30",
+    "end": "2024-08-29T18:40:00+05:30",
+    "link": "http://www.hhh.com",
+    "user_det": {
+      "candidate": {
+        "candidate_firstName": "Mohan",
+        "candidate_lastName": "Raj"
+      },
+      "handled_by": {
+        "firstName": "Vinodhini"
+      }
+    },
+    "job_id": {
+      "jobRequest_Title": "Django Developer"
+    }
+  }
+  
