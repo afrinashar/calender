@@ -181,3 +181,35 @@
         background-color: transparent;
         color: #000;
         }
+        .list-group-item {
+          position: relative;
+          display: block;
+          padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+          color: var(--bs-list-group-color);
+          text-decoration: none;
+          background-color: var(--bs-list-group-bg);
+          border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+          border-left: 8px solid rgb(19, 110, 255) !important;
+      }
+      a{
+          text-decoration: none !important;
+      }
+      .event-header {
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important; /* Add space between title, EditIcon, and DeleteIcon */
+      }
+      
+      .icon-spacing {
+        margin-left: 5px !important; /* Add margin to icons for spacing */
+      }
+      
+      .event-details {
+        margin-top: 10px !important; /* Add space above the event details */
+        margin-bottom: 10px; /* Add space below the event details */
+      }
+      
+      .event-dates {
+        margin-top: 10px !important; /* Add space above the event dates */
+      }
+      
