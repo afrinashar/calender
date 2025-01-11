@@ -116,3 +116,6 @@ Calendar View
 
 Event Details Modal
 
+
+### Full Calendar View
+![Full Calendar View](assets/c1.png)
