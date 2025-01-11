@@ -115,7 +115,24 @@ Screenshots
 Calendar View
 
 Event Details Modal
-
-
 ### Full Calendar View
-![Full Calendar View](assets/c1.png)
+![c6](https://github.com/user-attachments/assets/1467bad8-03e1-469b-bb38-fd57f158c106)
+
+###  Meeting Detailed View
+
+![c5](https://github.com/user-attachments/assets/65d330a1-e3f9-4fb3-8a45-566b7bab3568)
+
+### Full Detailed View
+
+![c4](https://github.com/user-attachments/assets/f376161e-0bcf-4ba4-ace4-13609d4085a1)
+
+### Full week View
+
+![c3](https://github.com/user-attachments/assets/ba91e269-35f5-4dc2-b01f-5ae6bd4b848a)
+
+### Full Day View
+
+![c2](https://github.com/user-attachments/assets/95d4171d-5274-46fa-bc89-c844a7ea34e0)
+ 
+
+ 
